@@ -1,3 +1,360 @@
+@charset "UTF-8";
+/*--------------------------  START MEDIA REQUEST  --------------------------*/
+@media only screen and (max-width: 2600px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 5.42092em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 4.07282em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 2.78179em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.9em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 1.57025em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 1.29773em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 1.29773em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 4.92811em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 3.70256em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 2.5289em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.72727em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 1.4275em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 1.17975em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 1.17975em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.72727em;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 4.4801em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 3.36597em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 2.299em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.57025em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 1.29773em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 1.0725em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 1.0725em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.57025em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 4.07282em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 3.05997em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 2.09em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.4275em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 1.17975em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 0.975em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 0.975em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.4275em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 3.70256em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 2.78179em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 1.9em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.29773em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 1.0725em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 0.88636em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 0.88636em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.29773em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 3.36597em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 2.5289em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 1.72727em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.17975em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 0.975em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 0.80579em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 0.80579em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.17975em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 3.05997em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 2.299em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 1.57025em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 1.0725em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 0.88636em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 0.73253em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 0.73253em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 1.0725em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 12, sass/main.scss */
+  h1 {
+    font-size: 2.78179em;
+  }
+
+  /* line 15, sass/main.scss */
+  h2 {
+    font-size: 2.09em;
+  }
+
+  /* line 18, sass/main.scss */
+  h3 {
+    font-size: 1.4275em;
+  }
+
+  /* line 21, sass/main.scss */
+  h4 {
+    font-size: 0.975em;
+  }
+
+  /* line 24, sass/main.scss */
+  h5 {
+    font-size: 0.80579em;
+  }
+
+  /* line 27, sass/main.scss */
+  h6 {
+    font-size: 0.66594em;
+  }
+
+  /* line 30, sass/main.scss */
+  p {
+    font-size: 0.66594em;
+  }
+
+  /* line 33, sass/main.scss */
+  td, th {
+    font-size: 0.975em;
+  }
+}
+/*--------------------------  END MEDIA REQUEST  --------------------------*/
+/* ╨Я╨╡╤А╨╡╤Е╨╛╨┤ */
+/*ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), step-start, step-end, steps(╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤И╨░╨│╨╛╨▓,start|end)*/
+/*╨б╨║╤А╤Г╨│╨╗╨╡╨╜╨╜╤Л╨╡ ╤Г╨│╨╗╤Л*/
+/*╨Ч╨░╨┤╨╡╤А╨╢╨║╨░ ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕*/
+/*╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨╕╤В╨╡╤А╨░╤Ж╨╕╨╣ ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕*/
+/*╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╨╡╨╗╤М╨╜╨╛╤Б╤В╤М ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕*/
+/*infinite*/
+/*╨Т╤А╨╡╨╝╨╡╨╜╨╜╨░╤П ╤Д╤Г╨╜╨║╤Ж╨╕╤П ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕*/
+/*ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), step-start, step-end, steps(╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤И╨░╨│╨╛╨▓,start|end)*/
+/*╨Э╨░╨┐╤А╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕*/
+/*alternate,  alternate-reverse, normal, reverse*/
+/*╨Я╨╡╤А╨╡╨┤ ╤Д╤Г╨╜╨║╤Ж╨╕╨╡╨╣ my-animation ╨┤╨╛╨╗╨╢╨╡╨╜ ╨▒╤Л╤В╤М ╤Б╨╛╨╖╨┤╨░╨╜ @keyframes ╨╕╨╗╨╕
+@-webkit-keyframes ╤Б ╨╕╨╝╨╡╨╜╨╡╨╝ ╤Б╨╛╨▓╨┐╨░╨┤╨░╤О╤Й╨╕╨╝ ╤Б $func_animation_name*/
+/*╨Ъ╨╜╨╛╨┐╨║╨░*/
+/* line 138, sass/main.scss */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 141, sass/main.scss */
+.inline-block-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 146, sass/main.scss */
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -5,15 +362,132 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialise;
+}
 
+/* line 156, sass/main.scss */
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-  color: red; }
+  color: red;
+}
 
+/* line 160, sass/main.scss */
 body input:required:valid,
 body textarea:required:valid {
-  color: green; }
+  color: green;
+}
 
+/* line 164, sass/main.scss */
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 168, sass/main.scss */
+input {
+  margin: 0;
+  border: 0;
+}
+
+/* line 172, sass/main.scss */
+button, html, input, select, textarea {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 177, sass/main.scss */
+a:hover {
+  -o-transition: color .1s ease;
+  transition: color .1s ease;
+}
+
+/* line 181, sass/main.scss */
+.disable-hover, .disable-hover * {
+  pointer-events: none !important;
+}
+
+/* line 184, sass/main.scss */
+a {
+  color: #004d99;
+  text-decoration: none;
+}
+/* line 187, sass/main.scss */
+a:hover {
+  color: #06c;
+  text-decoration: underline;
+  -o-transition: color .1s ease;
+  transition: color .1s ease;
+}
+
+/* line 195, sass/main.scss */
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* line 199, sass/main.scss */
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* line 203, sass/main.scss */
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* line 207, sass/main.scss */
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* line 212, sass/main.scss */
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 223, sass/main.scss */
+html.js .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+/* line 239, sass/main.scss */
+button,
+button:active,
+button:focus,
+button:hover,
+button:checked,
+button:default,
+input {
+  outline: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 251, sass/main.scss */
 .hidden {
-  display: none; }
+  display: none;
+}
