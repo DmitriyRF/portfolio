@@ -1,39 +1,52 @@
 @import "bourbon/bourbon";
 
 /*--------------------------  START MEDIA REQUEST  --------------------------*/
-$modular-scale-ratio: 1.1; //$golden=1.618 //bourbon
-$modular-scale-base: 1.9em; //bourbon
+$modular-scale-ratio: 1.13; //$golden=1.618 //bourbon
+$modular-scale-base: 1.2em; //bourbon
 $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1200px, screen4: 992px, screen5: 768px, screen6: 480px, screen7: 320px);
 // $max-screen-width: (screen0: 1440px, screen1: 1200px, screen2: 992px, screen3: 768px, screen4: 480px, screen5: 320px)
 
 @for $i from 0 through 7 {
 	@if map_has_key($max-screen-width, screen#{$i}){
 		@media only screen and (max-width :  map_get($max-screen-width, screen#{$i})){
-			h1{
+			h1,.h1{
 				font-size: modular-scale(11 - $i); //bourbon function
 			}
-			h2{
+			h2,.h2{
 				font-size: modular-scale(8 - $i); //bourbon function
 			}
-			h3{
+			h3,.h3{
 				font-size: modular-scale(4 - $i); //bourbon function
 			}
-			h4{
+			h4,.h4{
 				font-size: modular-scale(0 - $i); //bourbon function
 			}
-			h5{
+			h5,.h5{
 				font-size: modular-scale(-2 - $i); //bourbon function
 			}
-			h6{
+			h6,.h6{
 				font-size: modular-scale(-4 - $i); //bourbon function
 			}
-			p{
+			p, header, main, footer{
 				font-size: modular-scale(-4 - $i); //bourbon function
 			}
 			td, th{
 				font-size: modular-scale(0 - $i); //bourbon function
 			}
+			.s_indent{
+				padding-left: modular-scale(0 - $i);
+				padding-right: modular-scale(0 - $i);
+			}
+			.m_indent{
+				padding-left: modular-scale(5 - $i);
+				padding-right: modular-scale(5 - $i);
+			}
+			.l_indent{
+				padding-left: modular-scale(10 - $i);
+				padding-right: modular-scale(10 - $i);
+			}
 		}
+
 	}
 }
 
@@ -56,36 +69,36 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 /*Задержка анимации*/
 @mixin my-animation-delay($func_var_animation_delay){
 	-webkit-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-moz-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-ms-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-o-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-moz-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-ms-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-o-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	animation-delay: $func_var_animation_delay; /*задержка анимации*/
 }
 /*Количество итераций анимации*/
 @mixin my-animation-iteration-count($func_var_iteration_count){
 	-webkit-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-moz-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-ms-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-o-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-moz-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-ms-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-o-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
 }
 /*продолжительность анимации*/
 /*infinite*/
 @mixin my-animation-duration($func_var_animation_duration){
 	-webkit-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-moz-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-ms-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-o-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-moz-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-ms-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-o-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
 }
 /*Временная функция анимации*/
 /*ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), step-start, step-end, steps(количество шагов,start|end)*/
 @mixin my-animation-timing-function($func_var_animation_timing_function){
 	-webkit-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-moz-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-ms-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-o-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-moz-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-ms-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-o-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
 }
 /*Направление анимации*/
 /*alternate,  alternate-reverse, normal, reverse*/
@@ -96,19 +109,28 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 	-o-animation-direction: $func_var_animation_direction;/*Направление анимации*/
 	animation-direction: $func_var_animation_direction;/*Направление анимации*/
 }
+// Координаты точки, относительно которой будет происходить трансформация элемента.
+// transform-origin: <x> <y> <z>
+@mixin my-transform-origin($func_var_transform_origin_X,$func_var_transform_origin_Y){
+    -webkit-transform-origin: $func_var_transform_origin_X $func_var_transform_origin_Y;
+    -moz-transform-origin: $func_var_transform_origin_X $func_var_transform_origin_Y;
+    -o-transform-origin: $func_var_transform_origin_X $func_var_transform_origin_Y;
+    -ms-transform-origin: $func_var_transform_origin_X $func_var_transform_origin_Y;
+    transform-origin: $func_var_transform_origin_X $func_var_transform_origin_Y;
+}
 /*Перед функцией my-animation должен быть создан @keyframes или
 @-webkit-keyframes с именем совпадающим с $func_animation_name*/
 @mixin my-animation( $func_animation_name, $func_animation_duration,
 	$func_animation_timing_function, $func_animation_delay,
 	$func_animation_iteration_count, $func_animation_direction){
 	@each $pref in -webkit-, -moz-, -o-, -ms-{
-    	#{$pref}animation: $func_animation_name $func_animation_duration
+		#{$pref}animation: $func_animation_name $func_animation_duration
 		$func_animation_timing_function $func_animation_delay
 		$func_animation_iteration_count $func_animation_direction;
- 	}
- 	animation: $func_animation_name $func_animation_duration
-		$func_animation_timing_function $func_animation_delay
-		$func_animation_iteration_count $func_animation_direction;
+	}
+	animation: $func_animation_name $func_animation_duration
+	$func_animation_timing_function $func_animation_delay
+	$func_animation_iteration_count $func_animation_direction;
 }//@include  my-animation( run, 2s, liner, 0s, 1, normal)
 /*Кнопка*/
 @mixin my-button(){
@@ -116,8 +138,8 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 	/*Градиент*/
 	// @include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%));//bourbon mixin
 	@include my-box-shadow(0 0 1px rgba(255,255,255,.2) inset,0 3px 5px rgba(0,1,6,.5));
- 	&:hover:not(:disabled){
- 		top: -0.1em;
+	&:hover:not(:disabled){
+		top: -0.1em;
 		left: -0.1em;
 		@include my-box-shadow(0 0 2px rgba(255,255,255,.3) inset,0 4px 6px rgba(0,1,6,.6));
 	}
@@ -130,9 +152,9 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 	
 }
 @mixin my-box-shadow($arg...){
-		-webkit-box-shadow: $arg;
-		-moz-box-shadow: $arg;
-		box-shadow: $arg;
+	-webkit-box-shadow: $arg;
+	-moz-box-shadow: $arg;
+	box-shadow: $arg;
 }
 
 .inline-block {
@@ -143,11 +165,13 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 		vertical-align: bottom;
 	}
 }
+html{
+	font-size: 14px; 
+	min-width: 320px;
+}
 body{
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
-	font-size: 14px; 
-	min-width: 320px;
 	position: relative;
 	line-height: 1.42857;
 	-webkit-font-smoothing: antialise;
@@ -255,3 +279,205 @@ input{
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	background-size: cover;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+.heder, .main, .footer, div, section{
+	display: block;
+	position: relative;
+
+}
+.heder{
+	min-height: 720px;
+	padding: 20px;
+	.for_filter{
+		@media only screen and (max-width:  768px){
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(1px);
+			@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
+			width: 100%;
+			height: 125px;
+			display: block;
+			z-index: 100;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+	}
+	.logo{
+		display: block;
+		width: 120px;
+		height: 60px;			
+		top: 20px;
+		position: fixed;
+		left: 36px;
+		@include my-border-radius(4px);
+		z-index: 100;
+		svg{
+			width: 120px;
+			
+			float: left;
+
+		}
+	}
+	.menu{
+		width: 64px;
+		height: 64px;
+		float: right;
+		z-index: 100;
+		top: 20px;
+		position: fixed;
+		right: 60px;
+		@include my-border-radius(4px);
+		$w: 36px;
+		$h: 4px;
+		#sandwich{
+			width: $w;
+			height: 5*$h;
+			margin: (60-5*$h)/2 auto;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		} 
+		.palochka{
+			position: absolute;
+			width: $w;
+			height: $h;
+			background-color: #aaa;
+			border: none; 
+			border-radius: 4px 4px 4px 4px;
+			@include my-transform-origin($w/2, $h/2);
+		}
+		.sw-topper{
+			@extend .palochka;
+			top: 0;
+			transition: transform 0.5s, top 0.4s;
+		}
+		.sw-bottom{
+			@extend .palochka;
+			top: $h * 2;
+			left: 0;
+			transition: all 0.4s;
+		}
+		.sw-footer{
+			@extend .palochka;
+			top: $h * 4;
+			transition: transform 0.5s, top 0.4s;
+		}
+		#sandwich.active{ 
+			.sw-topper{
+				top: $w/4;
+				transform: rotate(140deg);
+			}
+			.sw-bottom{
+				width: $h;
+				left: $w/2;
+				opacity: 0;
+			}
+			.sw-footer{
+				top: $w/4;
+				transform: rotate(-140deg);
+			}
+		}
+	}
+	.points{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		right: 0;
+		top: 0;
+		@include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%));//bourbon mixin
+		display: none;
+		ul,li{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		ul{
+			margin-top: 120px;
+			text-align: center;
+			a{
+				color: #fff;
+				display: block;
+				padding: 20px 0;
+				text-transform: uppercase;
+				text-decoration: none;
+				margin: 2px auto;
+				
+			}
+		}
+	}
+	.top_wrapper{
+		display: table;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 98;
+		overflow: hidden;
+		background-color: rgba(0,0,0,0.8);
+		.top_description{
+			display: table-row;
+			.top_centred{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+
+			}
+		}
+		.top_text{
+			display: inline-block;
+			color: #fff;
+			h1{
+				display: inline-block;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				border: 7px solid #fff;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-family: RalewayRegular, sans-serif;
+				@extend .m_indent;
+				// background-color: rgba(0,0,0,0.8);
+				// box-shadow: rgba(0,0,0,0.8) 0 0 0 1000px;
+			}
+			p{
+				text-transform: uppercase;
+				font-weight: 600;
+				font-family: RalewayRegular, sans-serif;
+			}
+		}
+		.opassit{
+			opacity: 0.5;
+			@include transition(all 0.2s ease);
+		}
+	}
+}
+section{
+	position: relative;
+}

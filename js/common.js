@@ -1,7 +1,35 @@
 $(document).ready(function() {
+	
+	$(".heder").css("height", $(window).height());
+	$(window).resize(function(event) {
+		$(".heder").css("height", $(window).height());
+	});
 
+	$(window).load(function() { //.onload
+		$(".loader_inner").fadeOut(); 
+		$(".loader").delay(400).fadeOut("slow"); 
+	});
+
+	$(".menu").click(function() {
+		$(".points ul").toggleClass("fadeInUp animated");
+		$(".top_text").toggleClass('opassit');
+		$("#sandwich").toggleClass("active");
+		$(".points").fadeToggle(700);
+	});	
 	
-	
+	$(".points ul a").click(function(event) {
+		$(".top_text").toggleClass('opassit');	
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';	
+		$(".points ul").addClass("animated fadeOutDown").one(animationEnd, 
+			function() {
+				$(this).removeClass("animated fadeOutDown");
+			}
+		);
+		$(".points ul").toggleClass("fadeInUp animated");
+		$("#sandwich").toggleClass("active");
+		$(".points").fadeToggle(700);
+	});
+
 });
 
 

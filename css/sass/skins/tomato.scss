@@ -13,12 +13,12 @@ body{
 	color: $main_color;
 	@include kerning(1);
 }
-a{
-	color: $color;
-}
-p{
-	color: $text_color;
-}
+// a{
+// 	color: $color;
+// }
+// p{
+// 	color: $text_color;
+// }
 
 .color_element{
 	color: $color;
@@ -28,4 +28,29 @@ p{
 }
 .color_border{
 	border-color: $color;
+}
+.logo{
+	// border: 2px solid $main_color;
+}
+svg{
+	width: 120px;
+	path{
+		fill: #aaa;
+	}
+}
+.menu{
+	// background-color: $main_color;
+	border: 2px solid $main_color;
+}
+.points ul a{
+	&:hover{
+
+		background-color: rgba(255,255,255,0.25);
+	}
+	&:active{
+		border-top: 1px solid rgba(255, 99, 71, 0.66);
+		border-bottom: 1px solid rgba(255, 99, 71, 0.66);
+		color: $color;
+	}
+	@include kerning(1);
 }
