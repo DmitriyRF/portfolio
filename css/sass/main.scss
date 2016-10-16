@@ -33,18 +33,6 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 			td, th{
 				font-size: modular-scale(0 - $i); //bourbon function
 			}
-			.s_indent{
-				padding-left: modular-scale(0 - $i);
-				padding-right: modular-scale(0 - $i);
-			}
-			.m_indent{
-				padding-left: modular-scale(5 - $i);
-				padding-right: modular-scale(5 - $i);
-			}
-			.l_indent{
-				padding-left: modular-scale(10 - $i);
-				padding-right: modular-scale(10 - $i);
-			}
 		}
 
 	}
@@ -451,25 +439,25 @@ input{
 
 			}
 		}
+		.Dmitriy{
+				text-transform: uppercase;
+				font-weight: 600;
+				font-family: RalewayRegular, sans-serif;
+				display: inline-block;
+		}
 		.top_text{
 			display: inline-block;
 			color: #fff;
 			h1{
-				display: inline-block;
-				padding-bottom: 10px;
-				padding-top: 10px;
 				border: 7px solid #fff;
-				text-transform: uppercase;
-				font-weight: 600;
-				font-family: RalewayRegular, sans-serif;
-				@extend .m_indent;
+				padding: 10px 4%;
+				margin: 20px 15px 10px;
+				@extend .Dmitriy;
 				// background-color: rgba(0,0,0,0.8);
 				// box-shadow: rgba(0,0,0,0.8) 0 0 0 1000px;
 			}
-			p{
-				text-transform: uppercase;
-				font-weight: 600;
-				font-family: RalewayRegular, sans-serif;
+			h3{
+				@extend .Dmitriy;
 			}
 		}
 		.opassit{
@@ -478,6 +466,15 @@ input{
 		}
 	}
 }
-section{
-	position: relative;
+.main{
+	section{
+		padding: 75px 0;
+		h2,h4{
+			text-align: center;
+			@extend .Dmitriy;
+
+
+		}
+		
+	}
 }
