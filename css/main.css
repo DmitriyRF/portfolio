@@ -32,7 +32,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.73598em;
   }
 
@@ -73,7 +73,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.65131em;
   }
 
@@ -114,7 +114,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.57638em;
   }
 
@@ -155,7 +155,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.51007em;
   }
 
@@ -196,7 +196,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.45139em;
   }
 
@@ -237,7 +237,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.39946em;
   }
 
@@ -278,7 +278,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.35351em;
   }
 
@@ -319,7 +319,7 @@
   }
 
   /* line 30, sass/main.scss */
-  p, header, main, footer {
+  p {
     font-size: 0.31284em;
   }
 
@@ -391,13 +391,6 @@ body {
 input {
   margin: 0;
   border: 0;
-}
-
-/* line 184, sass/main.scss */
-button, html, input, select, textarea {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 189, sass/main.scss */
@@ -531,16 +524,14 @@ input {
   position: relative;
 }
 
-/* line 301, sass/main.scss */
+/* line 300, sass/main.scss */
 .heder {
   min-height: 720px;
   padding: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 304, sass/main.scss */
+  /* line 303, sass/main.scss */
   .heder .for_filter {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(1px);
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8) 20%, transparent 100%);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8) 20%, transparent 100%);
     width: 100%;
@@ -552,7 +543,7 @@ input {
     left: 0;
   }
 }
-/* line 318, sass/main.scss */
+/* line 317, sass/main.scss */
 .heder .logo {
   display: block;
   width: 120px;
@@ -570,12 +561,12 @@ input {
   border-top-left-radius: 4px;
   z-index: 100;
 }
-/* line 327, sass/main.scss */
+/* line 326, sass/main.scss */
 .heder .logo svg {
   width: 120px;
   float: left;
 }
-/* line 334, sass/main.scss */
+/* line 332, sass/main.scss */
 .heder .menu {
   width: 64px;
   height: 64px;
@@ -593,7 +584,7 @@ input {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-/* line 345, sass/main.scss */
+/* line 343, sass/main.scss */
 .heder .menu #sandwich {
   width: 36px;
   height: 20px;
@@ -603,7 +594,7 @@ input {
   left: 0;
   right: 0;
 }
-/* line 354, sass/main.scss */
+/* line 352, sass/main.scss */
 .heder .menu .palochka, .heder .menu .sw-topper, .heder .menu .sw-bottom, .heder .menu .sw-footer {
   position: absolute;
   width: 36px;
@@ -617,39 +608,39 @@ input {
   -ms-transform-origin: 18px 2px;
   transform-origin: 18px 2px;
 }
-/* line 363, sass/main.scss */
+/* line 361, sass/main.scss */
 .heder .menu .sw-topper {
   top: 0;
   transition: transform 0.5s, top 0.4s;
 }
-/* line 368, sass/main.scss */
+/* line 366, sass/main.scss */
 .heder .menu .sw-bottom {
   top: 8px;
   left: 0;
   transition: all 0.4s;
 }
-/* line 374, sass/main.scss */
+/* line 372, sass/main.scss */
 .heder .menu .sw-footer {
   top: 16px;
   transition: transform 0.5s, top 0.4s;
 }
-/* line 380, sass/main.scss */
+/* line 378, sass/main.scss */
 .heder .menu #sandwich.active .sw-topper {
   top: 9px;
   transform: rotate(140deg);
 }
-/* line 384, sass/main.scss */
+/* line 382, sass/main.scss */
 .heder .menu #sandwich.active .sw-bottom {
   width: 4px;
   left: 18px;
   opacity: 0;
 }
-/* line 389, sass/main.scss */
+/* line 387, sass/main.scss */
 .heder .menu #sandwich.active .sw-footer {
   top: 9px;
   transform: rotate(-140deg);
 }
-/* line 395, sass/main.scss */
+/* line 393, sass/main.scss */
 .heder .points {
   position: fixed;
   width: 100%;
@@ -661,18 +652,18 @@ input {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
   display: none;
 }
-/* line 404, sass/main.scss */
+/* line 402, sass/main.scss */
 .heder .points ul, .heder .points li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 409, sass/main.scss */
+/* line 407, sass/main.scss */
 .heder .points ul {
   margin-top: 120px;
   text-align: center;
 }
-/* line 412, sass/main.scss */
+/* line 410, sass/main.scss */
 .heder .points ul a {
   color: #fff;
   display: block;
@@ -681,7 +672,7 @@ input {
   text-decoration: none;
   margin: 2px auto;
 }
-/* line 423, sass/main.scss */
+/* line 421, sass/main.scss */
 .heder .top_wrapper {
   display: table;
   width: 100%;
@@ -693,35 +684,35 @@ input {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 433, sass/main.scss */
+/* line 431, sass/main.scss */
 .heder .top_wrapper .top_description {
   display: table-row;
 }
-/* line 435, sass/main.scss */
+/* line 433, sass/main.scss */
 .heder .top_wrapper .top_description .top_centred {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 442, sass/main.scss */
+/* line 440, sass/main.scss */
 .heder .top_wrapper .Dmitriy, .heder .top_wrapper .top_text h1, .heder .top_wrapper .top_text h3, .heder .top_wrapper .main section h2, .main section .heder .top_wrapper h2, .heder .top_wrapper .main section h4, .main section .heder .top_wrapper h4 {
   text-transform: uppercase;
   font-weight: 600;
   font-family: RalewayRegular, sans-serif;
   display: inline-block;
 }
-/* line 448, sass/main.scss */
+/* line 446, sass/main.scss */
 .heder .top_wrapper .top_text {
   display: inline-block;
   color: #fff;
 }
-/* line 451, sass/main.scss */
+/* line 449, sass/main.scss */
 .heder .top_wrapper .top_text h1 {
   border: 7px solid #fff;
   padding: 10px 4%;
   margin: 20px 15px 10px;
 }
-/* line 463, sass/main.scss */
+/* line 459, sass/main.scss */
 .heder .top_wrapper .opassit {
   opacity: 0.5;
   -webkit-transition: all 0.2s ease;
@@ -729,11 +720,17 @@ input {
   transition: all 0.2s ease;
 }
 
-/* line 470, sass/main.scss */
+/* line 466, sass/main.scss */
 .main section {
   padding: 75px 0;
 }
-/* line 472, sass/main.scss */
+/* line 468, sass/main.scss */
 .main section h2, .main section h4 {
   text-align: center;
+}
+/* line 472, sass/main.scss */
+.main section hr {
+  width: 20vmax;
+  height: 1px;
+  background-color: #777;
 }

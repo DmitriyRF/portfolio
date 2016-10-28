@@ -27,7 +27,7 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 			h6,.h6{
 				font-size: modular-scale(-4 - $i); //bourbon function
 			}
-			p, header, main, footer{
+			p{
 				font-size: modular-scale(-4 - $i); //bourbon function
 			}
 			td, th{
@@ -181,11 +181,11 @@ input {
 	margin: 0;
 	border: 0;
 }
-button, html, input, select, textarea {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+// button, html, input, select, textarea {
+// 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
 a:hover {
 	-o-transition: color .1s ease;
 	transition: color .1s ease;
@@ -296,15 +296,14 @@ input{
 .heder, .main, .footer, div, section{
 	display: block;
 	position: relative;
-
 }
 .heder{
 	min-height: 720px;
 	padding: 20px;
 	.for_filter{
 		@media only screen and (max-width:  768px){
-			backdrop-filter: blur(8px);
-			-webkit-backdrop-filter: blur(1px);
+			// backdrop-filter: blur(8px);
+			// -webkit-backdrop-filter: blur(1px);
 			@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
 			width: 100%;
 			height: 125px;
@@ -326,7 +325,6 @@ input{
 		z-index: 100;
 		svg{
 			width: 120px;
-			
 			float: left;
 
 		}
@@ -453,8 +451,6 @@ input{
 				padding: 10px 4%;
 				margin: 20px 15px 10px;
 				@extend .Dmitriy;
-				// background-color: rgba(0,0,0,0.8);
-				// box-shadow: rgba(0,0,0,0.8) 0 0 0 1000px;
 			}
 			h3{
 				@extend .Dmitriy;
@@ -472,8 +468,11 @@ input{
 		h2,h4{
 			text-align: center;
 			@extend .Dmitriy;
-
-
+		}
+		hr{
+			width: 20vmax;
+			height: 1px;
+			background-color: #777;
 		}
 		
 	}
