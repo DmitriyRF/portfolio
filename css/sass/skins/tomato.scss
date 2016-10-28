@@ -1,57 +1,36 @@
 @import "../bourbon/bourbon";
 
-$color: #FF6347; //Theme skin
-$text_color: #888; 
 $main_color: #222;
 
-$bg_light: #FAFAFA;
-$bg_dark: #676767;
-
-$color_chroma: #FF6447;
+$color_chroma: #FF6447;//Theme skin
 $color_secondary_A: #FFA547;
 $color_secondary_B: #31849F;
 $color_contrast: #34BB62;
 
 $color_bg_light: #FAFAFA;
 $color_txt_for_light: #454545;
-$color_for_h123456_light: $color_secondary_A;
+$color_for_h123456_light: $color_secondary_B;
 $color_button_for_light: #898989;
 $color_for_link_light: $color_contrast;
 
 $color_bg_dark: #454545;
 $color_txt_for_dark: #FAFAFA;
-$color_for_h123456_dark: $color_secondary_B;
+$color_for_h123456_dark: $color_secondary_A;
 $color_button_for_dark: #898989;
 $color_for_link_dark: $color_contrast;
 
 
- 
-@mixin kerning($kerning){
-	letter-spacing: $kerning + px;
-}
-
 body{
 	color: $main_color;
-	@include kerning(1);
 }
-// a{
-// 	color: $color;
-// }
-// p{
-// 	color: $text_color;
-// }
-
 .color_element{
-	color: $color;
+	color: $color_chroma;
 }
 .color_bg{
-	background-color: $color;
+	background-color: $color_chroma;
 }
 .color_border{
-	border-color: $color;
-}
-.logo{
-	// border: 2px solid $main_color;
+	border-color: $color_chroma;
 }
 svg{
 	width: 120px;
@@ -60,7 +39,6 @@ svg{
 	}
 }
 .menu{
-	// background-color: $main_color;
 	border: 2px solid $main_color;
 }
 .points ul a{
@@ -71,9 +49,8 @@ svg{
 	&:active{
 		border-top: 1px solid rgba(255, 99, 71, 0.66);
 		border-bottom: 1px solid rgba(255, 99, 71, 0.66);
-		color: $color;
+		color: $color_chroma;
 	}
-	@include kerning(1);
 }
 
 .bg_light{
