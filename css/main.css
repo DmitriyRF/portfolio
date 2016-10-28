@@ -714,11 +714,9 @@ input {
 }
 /* line 453, sass/main.scss */
 .footer .dark {
-  color: #fafafa;
-  float: right;
+  color: #898989;
 }
-/* line 458, sass/main.scss */
+/* line 457, sass/main.scss */
 .footer .light {
-  color: #454545;
-  float: left;
+  color: #898989;
 }
