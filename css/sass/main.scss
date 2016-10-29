@@ -373,14 +373,22 @@ input{
 		ul{
 			margin-top: 120px;
 			text-align: center;
-			a{
-				color: #fff;
-				display: block;
-				padding: 20px 0;
-				text-transform: uppercase;
-				text-decoration: none;
-				margin: 2px auto;
-				
+			li{
+				@for $j from 1 through 4 {
+					&:nth-child(#{$j}) a{
+						@include animation-duration($j * 0.7s);
+					}
+
+				}
+				a{
+					color: #fff;
+					display: block;
+					padding: 20px 0;
+					text-transform: uppercase;
+					text-decoration: none;
+					margin: 2px auto;
+
+				}	
 			}
 		}
 	}
@@ -413,11 +421,12 @@ input{
 				@extend .Dmitriy;
 				font-weight: 600;
 				display: inline-block;
+				@include animation-delay(1s);
 			}
 			h4{
 				@extend .Dmitriy;			
 				font-weight: 600;
-				// display: inline-block;
+				@include animation-delay(1.5s);
 			}
 		}
 		.opassit{
@@ -455,13 +464,13 @@ input{
 		color: #898989;
 		margin: 20px 0 0;
 		position: relative;
-		
+
 	}
 	.light{
 		// color: #454545;
 		color: #898989;
 		margin: 20px 0 0;
 		position: relative;
-		
+
 	}
 }

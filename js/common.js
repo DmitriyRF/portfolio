@@ -1,4 +1,11 @@
 $(document).ready(function() {
+var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";  
+
+
+    $(".top_text h1").animated("fadeInDown", "fadeOutUp");
+    $(".top_text h4").animated("fadeInUp", "fadeOutDown");
+    $(".head").animated("fadeInUp", "fadeOutDown");
+
 	
 	$(".heder").css("height", $(window).height());
 	$(window).resize(function(event) {
@@ -10,24 +17,30 @@ $(document).ready(function() {
 		$(".loader").delay(400).fadeOut("slow"); 
 	});
 
-	$(".menu").click(function() {
-		$(".points ul").toggleClass("fadeInUp animated");
-		$(".top_text").toggleClass('opassit');
-		$("#sandwich").toggleClass("active");
-		$(".points").fadeToggle(700);
+	$(".menu").click(function() {        
+        //Выдвинуть пункты меню вверх
+        $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
+            function() {
+                $(this).removeClass("animated fadeInUp");
+            }
+        );
+
+		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью
+		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
+		// $(".points").fadeToggle(700);
+
+        // $(".heder .points ul li a").addClass("animated fadeOutDown");
 	});	
 	
-	$(".points ul a").click(function(event) {
-		$(".top_text").toggleClass('opassit');	
-		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';	
-		$(".points ul").addClass("animated fadeOutDown").one(animationEnd, 
+	$(".heder .points ul li a").click(function(event) {
+		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью	
+		$(".heder .points ul li a").addClass("animated fadeOutDown").one(animationEnd, 
 			function() {
 				$(this).removeClass("animated fadeOutDown");
 			}
 		);
-		$(".points ul").toggleClass("fadeInUp animated");
-		$("#sandwich").toggleClass("active");
-		$(".points").fadeToggle(700);
+		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
+		// $(".points").fadeToggle(700);
 	});
 
 });
