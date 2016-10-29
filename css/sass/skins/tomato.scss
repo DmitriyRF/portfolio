@@ -1,7 +1,5 @@
 @import "../bourbon/bourbon";
 
-$main_color: #222;
-
 $color_chroma: #FF6447;//Theme skin
 $color_secondary_A: #FFA547;
 $color_secondary_B: #31849F;
@@ -21,7 +19,7 @@ $color_for_link_dark: $color_contrast;
 
 
 body{
-	color: $main_color;
+	color: $color_txt_for_light;
 }
 .color_element{
 	color: $color_chroma;
@@ -36,10 +34,17 @@ svg{
 	width: 120px;
 	path{
 		fill: #aaa;
+		@media only screen and (max-width:  768px){
+			fill: #fff;
+		}
+
 	}
 }
 .menu{
-	border: 2px solid $main_color;
+	border: 2px solid $color_bg_dark;
+	@media only screen and (max-width:  768px){
+		border: 2px solid $color_bg_light;
+	}
 }
 .points ul a{
 	&:hover{

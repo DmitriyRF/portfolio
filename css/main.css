@@ -715,8 +715,12 @@ input {
 /* line 453, sass/main.scss */
 .footer .dark {
   color: #898989;
+  margin: 20px 0 0;
+  position: relative;
 }
-/* line 457, sass/main.scss */
+/* line 460, sass/main.scss */
 .footer .light {
   color: #898989;
+  margin: 20px 0 0;
+  position: relative;
 }

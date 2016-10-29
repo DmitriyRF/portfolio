@@ -1,96 +1,108 @@
-/* line 23, ../sass/skins/tomato.scss */
+/* line 21, ../sass/skins/tomato.scss */
 body {
-  color: #222;
+  color: #454545;
 }
 
-/* line 26, ../sass/skins/tomato.scss */
+/* line 24, ../sass/skins/tomato.scss */
 .color_element {
   color: #FF6447;
 }
 
-/* line 29, ../sass/skins/tomato.scss */
+/* line 27, ../sass/skins/tomato.scss */
 .color_bg {
   background-color: #FF6447;
 }
 
-/* line 32, ../sass/skins/tomato.scss */
+/* line 30, ../sass/skins/tomato.scss */
 .color_border {
   border-color: #FF6447;
 }
 
-/* line 35, ../sass/skins/tomato.scss */
+/* line 33, ../sass/skins/tomato.scss */
 svg {
   width: 120px;
 }
-/* line 37, ../sass/skins/tomato.scss */
+/* line 35, ../sass/skins/tomato.scss */
 svg path {
   fill: #aaa;
 }
-
-/* line 41, ../sass/skins/tomato.scss */
-.menu {
-  border: 2px solid #222;
+@media only screen and (max-width: 768px) {
+  /* line 35, ../sass/skins/tomato.scss */
+  svg path {
+    fill: #fff;
+  }
 }
 
-/* line 45, ../sass/skins/tomato.scss */
+/* line 43, ../sass/skins/tomato.scss */
+.menu {
+  border: 2px solid #454545;
+}
+@media only screen and (max-width: 768px) {
+  /* line 43, ../sass/skins/tomato.scss */
+  .menu {
+    border: 2px solid #FAFAFA;
+  }
+}
+
+/* line 50, ../sass/skins/tomato.scss */
 .points ul a:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
-/* line 49, ../sass/skins/tomato.scss */
+/* line 54, ../sass/skins/tomato.scss */
 .points ul a:active {
   border-top: 1px solid rgba(255, 99, 71, 0.66);
   border-bottom: 1px solid rgba(255, 99, 71, 0.66);
   color: #FF6447;
 }
 
-/* line 56, ../sass/skins/tomato.scss */
+/* line 61, ../sass/skins/tomato.scss */
 .bg_light {
   background-color: #FAFAFA;
   color: #454545;
 }
-/* line 59, ../sass/skins/tomato.scss */
+/* line 64, ../sass/skins/tomato.scss */
 .bg_light h1, .bg_light h2, .bg_light h3, .bg_light h4, .bg_light h5, .bg_light h6 {
   color: #31849F;
 }
-/* line 62, ../sass/skins/tomato.scss */
+/* line 67, ../sass/skins/tomato.scss */
 .bg_light button {
   background-color: #898989;
 }
-/* line 65, ../sass/skins/tomato.scss */
+/* line 70, ../sass/skins/tomato.scss */
 .bg_light a {
   color: #34BB62;
 }
-/* line 67, ../sass/skins/tomato.scss */
+/* line 72, ../sass/skins/tomato.scss */
 .bg_light a:visited {
   color: #34BB62;
 }
-/* line 70, ../sass/skins/tomato.scss */
+/* line 75, ../sass/skins/tomato.scss */
 .bg_light a:active {
   color: #34BB62;
 }
 
-/* line 75, ../sass/skins/tomato.scss */
+/* line 80, ../sass/skins/tomato.scss */
 .bg_dark {
   background-color: #454545;
   color: #FAFAFA;
 }
-/* line 78, ../sass/skins/tomato.scss */
+/* line 83, ../sass/skins/tomato.scss */
 .bg_dark h1, .bg_dark h2, .bg_dark h3, .bg_dark h4, .bg_dark h5, .bg_dark h6 {
   color: #FFA547;
 }
-/* line 81, ../sass/skins/tomato.scss */
+/* line 86, ../sass/skins/tomato.scss */
 .bg_dark button {
   background-color: #898989;
 }
-/* line 84, ../sass/skins/tomato.scss */
+/* line 89, ../sass/skins/tomato.scss */
 .bg_dark a {
   color: #34BB62;
 }
-/* line 86, ../sass/skins/tomato.scss */
+/* line 91, ../sass/skins/tomato.scss */
 .bg_dark a:visited {
   color: #34BB62;
 }
-/* line 89, ../sass/skins/tomato.scss */
+/* line 94, ../sass/skins/tomato.scss */
 .bg_dark a:active {
   color: #34BB62;
 }
