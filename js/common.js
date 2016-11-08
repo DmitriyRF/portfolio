@@ -36,9 +36,7 @@ $(document).ready(function() {
         }
 		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
-		$(".points").fadeToggle(700); // Показать меню
-
-        // $(".heder .points ul li a").addClass("animated fadeOutDown");
+        setTimeout(function () { $(".points").fadeToggle(700); }, 700); // Показать меню
     });	
 	
 	$(".heder .points ul li a").click(function(event) {
