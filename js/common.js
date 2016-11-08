@@ -1,46 +1,65 @@
 $(document).ready(function() {
-var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";  
+    var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";  
 
 
     $(".top_text h1").animated("fadeInDown", "fadeOutUp");
     $(".top_text h4").animated("fadeInUp", "fadeOutDown");
     $(".head").animated("fadeInUp", "fadeOutDown");
 
-	
-	$(".heder").css("height", $(window).height());
-	$(window).resize(function(event) {
-		$(".heder").css("height", $(window).height());
-	});
+
+    $(".heder").css("height", $(window).height());
+    $(window).resize(function(event) {
+      $(".heder").css("height", $(window).height());
+  });
 
 	$(window).load(function() { //.onload
 		$(".loader_inner").fadeOut(); 
 		$(".loader").delay(400).fadeOut("slow"); 
 	});
 
-	$(".menu").click(function() {        
-        //Выдвинуть пункты меню вверх
-        $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
-            function() {
-                $(this).removeClass("animated fadeInUp");
-            }
-        );
+	$(".menu").click(function() {   
 
+        if($(".heder .points").is(':visible')){
+                //Выдвинуть пункты меню вниз и скрыть
+            $(".heder .points ul li a").addClass("fadeOutDown animated").one(animationEnd, 
+                function() {
+                    $(".heder .points ul li a").removeClass("animated fadeOutDown");
+                }
+            );
+        }else{
+            //Выдвинуть пункты меню вверх
+            $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
+                function() {
+                    $(".heder .points ul li a").removeClass("animated fadeInUp");
+                }
+            );
+        }
 		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
-		// $(".points").fadeToggle(700);
+		$(".points").fadeToggle(700); // Показать меню
 
         // $(".heder .points ul li a").addClass("animated fadeOutDown");
-	});	
+    });	
 	
 	$(".heder .points ul li a").click(function(event) {
-		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью	
-		$(".heder .points ul li a").addClass("animated fadeOutDown").one(animationEnd, 
-			function() {
-				$(this).removeClass("animated fadeOutDown");
-			}
-		);
+        if ($(".heder .points").is(':visible')) {//.css('display','block')
+                //Выдвинуть пункты меню вниз и скрыть
+            $(".heder .points ul li a").addClass("fadeOutDown animated").one(animationEnd, 
+                function() {
+                    $(this).removeClass("animated fadeOutDown");
+                }
+            );
+        }else {
+            //Выдвинуть пункты меню вверх
+            $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
+                function() {
+                    $(this).removeClass("animated fadeInUp");
+                }
+            );
+        }
+        $(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью 
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
-		// $(".points").fadeToggle(700);
+		$(".points").fadeToggle(700); // Показать меню
 	});
 
 });
@@ -238,4 +257,4 @@ var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
         //     $(".loader").delay(400).fadeOut("slow");
 
         // });
-*/
+        */

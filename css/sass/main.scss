@@ -27,7 +27,7 @@ $max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1
 			h6,.h6{
 				font-size: modular-scale(2 - $i); //bourbon function
 			}
-			p, section{
+			p{
 				font-size: modular-scale(1 - $i); //bourbon function
 			}
 			td, th{
@@ -452,6 +452,11 @@ input{
 			background-color: #777;
 		}
 		
+	}
+	.about_me{
+		h3{
+			text-align: center;
+		}
 	}
 }
 .footer{
