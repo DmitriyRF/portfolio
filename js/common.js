@@ -19,15 +19,8 @@ $(document).ready(function() {
 
 	$(".menu").click(function() {   
 
-        if($(".heder .points").is(':visible')){
+        if($(".heder .points").is(':hidden')){
                 //Выдвинуть пункты меню вниз и скрыть
-            $(".heder .points ul li a").addClass("fadeOutDown animated").one(animationEnd, 
-                function() {
-                    $(".heder .points ul li a").removeClass("animated fadeOutDown");
-                }
-            );
-        }else{
-            //Выдвинуть пункты меню вверх
             $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
                 function() {
                     $(".heder .points ul li a").removeClass("animated fadeInUp");
@@ -36,25 +29,10 @@ $(document).ready(function() {
         }
 		$(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
-        setTimeout(function () { $(".points").fadeToggle(700); }, 700); // Показать меню
+        $(".points").fadeToggle(700); // Показать меню
     });	
 	
 	$(".heder .points ul li a").click(function(event) {
-        if ($(".heder .points").is(':visible')) {//.css('display','block')
-                //Выдвинуть пункты меню вниз и скрыть
-            $(".heder .points ul li a").addClass("fadeOutDown animated").one(animationEnd, 
-                function() {
-                    $(this).removeClass("animated fadeOutDown");
-                }
-            );
-        }else {
-            //Выдвинуть пункты меню вверх
-            $(".heder .points ul li a").addClass("fadeInUp animated").one(animationEnd, 
-                function() {
-                    $(this).removeClass("animated fadeInUp");
-                }
-            );
-        }
         $(".top_text").toggleClass('opassit');//Немного затемнить светлый фон прозрачностью 
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
 		$(".points").fadeToggle(700); // Показать меню
