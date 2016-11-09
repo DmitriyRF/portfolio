@@ -3,329 +3,329 @@
 @media only screen and (max-width: 2600px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 3.11249em;
+    font-size: 2.40662em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 2.57231em;
+    font-size: 2.07893em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 2.12587em;
+    font-size: 1.79586em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.75692em;
+    font-size: 1.47746em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 1.5972em;
+    font-size: 1.3401em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 1.452em;
+    font-size: 1.21551em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 1.32em;
+  p, ul, ol {
+    font-size: 1.21551em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 1.32em;
+    font-size: 1.21551em;
   }
 }
 @media only screen and (max-width: 1900px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 2.82954em;
+    font-size: 2.29202em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 2.33846em;
+    font-size: 1.97993em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.93261em;
+    font-size: 1.71034em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.5972em;
+    font-size: 1.4071em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 1.452em;
+    font-size: 1.27628em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 1.32em;
+    font-size: 1.15763em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 1.2em;
+  p, ul, ol {
+    font-size: 1.15763em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 1.2em;
+    font-size: 1.15763em;
   }
 }
 @media only screen and (max-width: 1440px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 2.57231em;
+    font-size: 2.18287em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 2.12587em;
+    font-size: 1.88565em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.75692em;
+    font-size: 1.62889em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.452em;
+    font-size: 1.3401em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 1.32em;
+    font-size: 1.21551em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 1.2em;
+    font-size: 1.1025em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 1.09091em;
+  p, ul, ol {
+    font-size: 1.1025em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 1.09091em;
+    font-size: 1.1025em;
   }
 }
 @media only screen and (max-width: 1200px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 2.33846em;
+    font-size: 2.07893em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 1.93261em;
+    font-size: 1.79586em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.5972em;
+    font-size: 1.55133em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.32em;
+    font-size: 1.27628em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 1.2em;
+    font-size: 1.15763em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 1.09091em;
+    font-size: 1.05em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 0.99174em;
+  p, ul, ol {
+    font-size: 1.05em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 0.99174em;
+    font-size: 1.05em;
   }
 }
 @media only screen and (max-width: 992px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 2.12587em;
+    font-size: 1.97993em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 1.75692em;
+    font-size: 1.71034em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.452em;
+    font-size: 1.47746em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.2em;
+    font-size: 1.21551em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 1.09091em;
+    font-size: 1.1025em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 0.99174em;
+    font-size: 1em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 0.90158em;
+  p, ul, ol {
+    font-size: 1em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 0.90158em;
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 768px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 1.93261em;
+    font-size: 1.88565em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 1.5972em;
+    font-size: 1.62889em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.32em;
+    font-size: 1.4071em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 1.09091em;
+    font-size: 1.15763em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 0.99174em;
+    font-size: 1.05em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 0.90158em;
+    font-size: 0.95238em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 0.81962em;
+  p, ul, ol {
+    font-size: 0.95238em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 0.81962em;
+    font-size: 0.95238em;
   }
 }
 @media only screen and (max-width: 480px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 1.75692em;
+    font-size: 1.79586em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 1.452em;
+    font-size: 1.55133em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.2em;
+    font-size: 1.3401em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 0.99174em;
+    font-size: 1.1025em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 0.90158em;
+    font-size: 1em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 0.81962em;
+    font-size: 0.90703em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 0.74511em;
+  p, ul, ol {
+    font-size: 0.90703em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 0.74511em;
+    font-size: 0.90703em;
   }
 }
 @media only screen and (max-width: 320px) {
   /* line 12, sass/main.scss */
   h1, .h1 {
-    font-size: 1.5972em;
+    font-size: 1.71034em;
   }
 
   /* line 15, sass/main.scss */
   h2, .h2 {
-    font-size: 1.32em;
+    font-size: 1.47746em;
   }
 
   /* line 18, sass/main.scss */
   h3, .h3 {
-    font-size: 1.09091em;
+    font-size: 1.27628em;
   }
 
   /* line 21, sass/main.scss */
   h4, .h4 {
-    font-size: 0.90158em;
+    font-size: 1.05em;
   }
 
   /* line 24, sass/main.scss */
   h5, .h5 {
-    font-size: 0.81962em;
+    font-size: 0.95238em;
   }
 
   /* line 27, sass/main.scss */
   h6, .h6 {
-    font-size: 0.74511em;
+    font-size: 0.86384em;
   }
 
   /* line 30, sass/main.scss */
-  p {
-    font-size: 0.67737em;
+  p, ul, ol {
+    font-size: 0.86384em;
   }
 
   /* line 33, sass/main.scss */
   td, th {
-    font-size: 0.67737em;
+    font-size: 0.86384em;
   }
 }
 /*--------------------------  END MEDIA REQUEST  --------------------------*/
@@ -735,24 +735,44 @@ input {
   background-color: #777;
 }
 /* line 457, sass/main.scss */
-.main .about_me h3 {
+.main .about_me h5 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* line 462, sass/main.scss */
+.main .about_me .avatar {
   text-align: center;
 }
+/* line 464, sass/main.scss */
+.main .about_me .avatar img {
+  max-width: 220px;
+  display: inline-block;
+}
+/* line 469, sass/main.scss */
+.main .about_me .social_wrap {
+  list-style-type: none;
+}
+/* line 471, sass/main.scss */
+.main .about_me .social_wrap li {
+  display: inline-block;
+  margin: 10px 5%;
+}
 
-/* line 462, sass/main.scss */
+/* line 478, sass/main.scss */
 .footer {
   background-image: -webkit-linear-gradient(45deg, #fafafa 48%, #454545 45%);
   background-image: linear-gradient(45deg, #fafafa 48%, #454545 45%);
   min-height: 203px;
   border-bottom: 80px solid #fafafa;
 }
-/* line 467, sass/main.scss */
+/* line 483, sass/main.scss */
 .footer .dark {
   color: #898989;
   margin: 20px 0 0;
   position: relative;
 }
-/* line 474, sass/main.scss */
+/* line 490, sass/main.scss */
 .footer .light {
   color: #898989;
   margin: 20px 0 0;
