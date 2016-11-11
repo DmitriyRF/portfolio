@@ -216,7 +216,7 @@ button:focus,
 button:hover,
 button:checked,
 button:default,
-input{
+input, a, img{
 	outline: none;
 	-moz-user-select: -moz-none;
 	-webkit-user-select: none;
@@ -450,27 +450,48 @@ input{
 			width: 20vmax;
 			height: 1px;
 			background-color: #777;
+			margin-bottom: 30px;
 		}
 		
 	}
 	.about_me{
-		h5{
+		h5,h3,h4{
 			text-align: center;
 			letter-spacing: 1px;
 			text-transform: uppercase;
+		}
+		h5{
+			margin-bottom: 30px;
+			\margin-top: 30px;
+		}
+		h3,h4{
+			text-align: left;
+			margin-bottom: 30px;
+		}
+		p{
+			margin-bottom:30px;
+		}
+		ul,li{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+			li{
+				margin-bottom: 10px;
+			}
 		}
 		.avatar{
 			text-align: center;
 			img{
 				max-width: 220px;
 				display: inline-block;
+				@include my-border-radius(50%);
 			}
 		}
 		.social_wrap{
 			list-style-type: none;
 			li{
 				display: inline-block;
-				margin: 10px 5%;
+				margin: 10px 3%;
 			}
 		}
 	}

@@ -70,11 +70,11 @@ svg path {
 }
 /* line 70, ../sass/skins/tomato.scss */
 .bg_light a {
-  color: #34BB62;
+  color: #FF6447;
 }
 /* line 72, ../sass/skins/tomato.scss */
 .bg_light a:visited {
-  color: #34BB62;
+  color: #FF6447;
 }
 /* line 75, ../sass/skins/tomato.scss */
 .bg_light a:active {
@@ -96,13 +96,18 @@ svg path {
 }
 /* line 89, ../sass/skins/tomato.scss */
 .bg_dark a {
-  color: #34BB62;
+  color: #FF6447;
 }
 /* line 91, ../sass/skins/tomato.scss */
 .bg_dark a:visited {
-  color: #34BB62;
+  color: #FF6447;
 }
 /* line 94, ../sass/skins/tomato.scss */
 .bg_dark a:active {
   color: #34BB62;
+}
+
+/* line 101, ../sass/skins/tomato.scss */
+.about_me p:nth-child(even) {
+  color: #FF6447;
 }

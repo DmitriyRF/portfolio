@@ -68,9 +68,9 @@ svg{
 		background-color: $color_button_for_light;
 	}
 	a{
-		color: $color_for_link_light;
+		color: $color_chroma;
 		&:visited{
-			color: $color_for_link_light;
+			color: $color_chroma;
 		}
 		&:active{
 			color: $color_for_link_light;
@@ -87,13 +87,19 @@ svg{
 		background-color: $color_button_for_dark;
 	}
 	a{
-		color: $color_for_link_dark;
+		color: $color_chroma;
 		&:visited{
-			color: $color_for_link_dark;
+			color: $color_chroma;
 		}
 		&:active{
 			color: $color_for_link_dark;
 		}
+	}
+
+}
+.about_me{
+	p:nth-child(even){
+		color: $color_chroma;
 	}
 
 }

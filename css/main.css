@@ -437,7 +437,7 @@ button:focus,
 button:hover,
 button:checked,
 button:default,
-input {
+input, a, img {
   outline: none;
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
@@ -733,46 +733,79 @@ input {
   width: 20vmax;
   height: 1px;
   background-color: #777;
+  margin-bottom: 30px;
 }
-/* line 457, sass/main.scss */
-.main .about_me h5 {
+/* line 458, sass/main.scss */
+.main .about_me h5, .main .about_me h3, .main .about_me h4 {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 462, sass/main.scss */
+/* line 463, sass/main.scss */
+.main .about_me h5 {
+  margin-bottom: 30px;
+  \margin-top: 30px;
+}
+/* line 467, sass/main.scss */
+.main .about_me h3, .main .about_me h4 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* line 471, sass/main.scss */
+.main .about_me p {
+  margin-bottom: 30px;
+}
+/* line 474, sass/main.scss */
+.main .about_me ul, .main .about_me li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 478, sass/main.scss */
+.main .about_me ul li, .main .about_me li li {
+  margin-bottom: 10px;
+}
+/* line 482, sass/main.scss */
 .main .about_me .avatar {
   text-align: center;
 }
-/* line 464, sass/main.scss */
+/* line 484, sass/main.scss */
 .main .about_me .avatar img {
   max-width: 220px;
   display: inline-block;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
 }
-/* line 469, sass/main.scss */
+/* line 490, sass/main.scss */
 .main .about_me .social_wrap {
   list-style-type: none;
 }
-/* line 471, sass/main.scss */
+/* line 492, sass/main.scss */
 .main .about_me .social_wrap li {
   display: inline-block;
-  margin: 10px 5%;
+  margin: 10px 3%;
 }
 
-/* line 478, sass/main.scss */
+/* line 499, sass/main.scss */
 .footer {
   background-image: -webkit-linear-gradient(45deg, #fafafa 48%, #454545 45%);
   background-image: linear-gradient(45deg, #fafafa 48%, #454545 45%);
   min-height: 203px;
   border-bottom: 80px solid #fafafa;
 }
-/* line 483, sass/main.scss */
+/* line 504, sass/main.scss */
 .footer .dark {
   color: #898989;
   margin: 20px 0 0;
   position: relative;
 }
-/* line 490, sass/main.scss */
+/* line 511, sass/main.scss */
 .footer .light {
   color: #898989;
   margin: 20px 0 0;

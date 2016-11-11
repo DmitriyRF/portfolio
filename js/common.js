@@ -5,12 +5,16 @@ $(document).ready(function() {
     $(".top_text h1").animated("fadeInDown", "fadeOutUp");
     $(".top_text h4").animated("fadeInUp", "fadeOutDown");
     $(".head").animated("fadeInUp", "fadeOutDown");
+    $(".appear-side > div:nth-child(1)").animated("flipInY", "flipOutY");
+    $(".appear-side").children(2).animated("fadeInLeft", "fadeOutLeft");
+    $(".appear-side div:nth-child(3)").animated("fadeInRight", "fadeOutRight");
+
 
 
     $(".heder").css("height", $(window).height());
     $(window).resize(function(event) {
-      $(".heder").css("height", $(window).height());
-  });
+        $(".heder").css("height", $(window).height());
+    });
 
 	$(window).load(function() { //.onload
 		$(".loader_inner").fadeOut(); 
@@ -37,6 +41,8 @@ $(document).ready(function() {
 		$("#sandwich").toggleClass("active"); // on cross of foursquare Включить крестик
 		$(".points").fadeToggle(700); // Показать меню
 	});
+
+    $(".js-popup").magnificPopup({type:'image'});
 
 });
 
