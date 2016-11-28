@@ -14,26 +14,28 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- Иконка -->
+ <!-- Иконка -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  START  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+- -->
+ <!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  START  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+- -->
 	<link rel="shortcut icon" href="img/favicon.png" />
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/linea/linea-styles.css">
+
 	<!-- <link rel="stylesheet" href="libs/theme-options/style.css"> -->
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/skins/tomato.css" />
-<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  END  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+-+- -->
+ <!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  END  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+-+- -->
 </head>
 <body class="site">
 	<div class="hidden"></div>
@@ -280,7 +282,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="top_wrapper">
+		<div class="top-wrapper-of-main-heder-MyName">
 			<div class="top_description">
 				<div class="top_centred">
 					<div class="top_text">
@@ -296,9 +298,9 @@
 	<main class="main">
 		<section class="about_me bg_light" id="about_me">
 			<div class="head">
-				<h2>Обо мне</h2>
-				<h5>Давайте познакомимся поближе</h5>
-				<hr>
+				<h2 class="section-main-header">Обо мне</h2>
+				<h5 class="section-second-header">Давайте познакомимся поближе</h5>
+				<hr class="section-heder-beneath-hr">
 			</div>
 			<div class="container">
 				<div class="row appear-side">
@@ -337,15 +339,66 @@
 		</section>
 		<section class="resume bg_dark" id="resume">
 			<div class="head">
-				<h2>Резюме</h2>
-				<h5>Я работал</h5>
-				<hr>
+				<h2 class="section-main-header">Резюме</h2>
+				<h5 class="section-second-header">Мои знания и достижения</h5>
+				<hr class="section-heder-beneath-hr">
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt laboriosam, ipsum ipsam corrupti autem quas dicta blanditiis, quidem libero, vel cum, praesentium sed sunt. In quia, blanditiis quasi ad.
+					<div class="col-xs-12 col-sm-6 col-md-6 bl-left">
+						<h4 class="resume-direction">Работа</h4>
+						<i class="linea-io icon-basic-case"></i>
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus quas vero accusantium dolorum velit culpa, doloremque quaerat, dolorem eveniet, placeat aliquam eaque assumenda nisi rerum est fugit commodi minima.
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus quas vero accusantium dolorum velit culpa, doloremque quaerat, dolorem eveniet, placeat aliquam eaque assumenda nisi rerum est fugit commodi minima.
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus quas vero accusantium dolorum velit culpa, doloremque quaerat, dolorem eveniet, placeat aliquam eaque assumenda nisi rerum est fugit commodi minima.
+							</p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 bl-right">
+						<h4 class="resume-direction">Учеба</h4>
+						<span class="linea-io"><</span>
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi sunt aut incidunt, quod deserunt, quidem cum dolores amet odio officia asperiores iusto. Facere, praesentium maiores laboriosam error. Ullam, rem.
+							</p>
+							<div class="clearfix"></div>
+						</div>						
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi sunt aut incidunt, quod deserunt, quidem cum dolores amet odio officia asperiores iusto. Facere, praesentium maiores laboriosam error. Ullam, rem.
+							</p>
+							<div class="clearfix"></div>
+						</div>						
+						<div class="resume-item">
+							<div class="item-year">2007-2010</div>
+							<h5 class="item-organization"> Managment Inc <strong>Программист</strong></h5>
+							<p class="item-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi sunt aut incidunt, quod deserunt, quidem cum dolores amet odio officia asperiores iusto. Facere, praesentium maiores laboriosam error. Ullam, rem.
+							</p>
+							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
@@ -353,25 +406,100 @@
 		</section>
 		<section class="portfolio bg_light" id="portfolio">
 			<div class="head">
-				<h2>Портфолио</h2>
-				<h5>Мои проекты</h5>
-				<hr>
+				<h2 class="section-main-header">Портфолио</h2>
+				<h5 class="section-second-header">Мои проекты</h5>
+				<hr class="section-heder-beneath-hr">
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis officia expedita, alias ullam! Eveniet commodi deleniti porro nobis tempore provident voluptatum maxime unde sunt, explicabo, quasi quidem optio. Eligendi, debitis.
+					<div class="portfolio-table">
+						<ul class="types-of-kind-jobs">
+							<li class="filter active-point-of-kind"  data-filter="all">Все работы</li>
+							<li class="filter" data-filter=".category_1" >Сайты</li>
+							<li class="filter" data-filter=".category_2" >Логотипы</li>
+							<li class="filter" data-filter=".category_3" >Айдентика</li>
+						</ul>
+
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_1">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-2.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<a href="#portfolio-item-1" class="portfolio-button">Посмотреть</a>
+							</div>
+							<div class="row">
+								<div id="portfolio-item-1" class="portfolio-description col-xs-offset-1 col-xs-10 col-md-6 col-md-offset-3 col-fhd-6 col-fhd-offset-3  mfp-hide">
+									<h3 class="portfolio-description-header">Заголовок</h3>
+									<p class="portfolio-description-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum, cupiditate incidunt itaque laboriosam accusantium dolor ex ducimus, ea quaerat, exercitationem ipsa magnam inventore explicabo dolore? Placeat ratione dolores ea?</p>
+									<img class="portfolio-img" src="img/portfolio-img/portfolio-img-2.jpg" alt="">
+								</div>
+							</div>
 						</div>
-					</div>
+
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_1">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-1.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_1">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-2.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_2">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-1.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_2">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-1.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_2">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-2.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_3">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-2.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
+						<div class="mix col-xs-6 col-sm-4 col-md-3 col-fhd-2 category_3">
+							<img class="portfolio-img" src="img/portfolio-img/portfolio-img-1.jpg" alt="">
+							<div class="content-on-hover">
+								<h5 class="portfolio-header">Заголовок работы</h5>
+								<p class="portfolio-p">Описание работы</p>
+								<button class="portfolio-button">Посмотреть</button>
+							</div>
+						</div>
 				</div>
 			</div>
 		</section>
 		<section class="contacts bg_dark" id="contacts">
 			<div class="head">
-				<h2>Контакты</h2>
-				<h5>Связь</h5>
-				<hr>
+				<h2 class="section-main-header">Контакты</h2>
+				<h5 class="section-second-header">Связь</h5>
+				<hr class="section-heder-beneath-hr">
 			</div>
 			<div class="container">
 				<div class="row">

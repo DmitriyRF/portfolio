@@ -61,7 +61,8 @@ svg{
 .bg_light{
 	background-color: $color_bg_light;
 	color: $color_txt_for_light;
-	h1,h2,h3,h4,h5,h6{
+	border-color: $color_txt_for_light;
+	.section-main-header,.section-second-header{
 		color: $color_for_h123456_light;
 	}
 	button{
@@ -80,7 +81,8 @@ svg{
 .bg_dark{
 	background-color: $color_bg_dark;
 	color: $color_txt_for_dark;
-	h1,h2,h3,h4,h5,h6{
+	border-color: $color_txt_for_dark;
+	.section-main-header,.section-second-header,.resume-direction{
 		color: $color_for_h123456_dark;
 	}
 	button{
@@ -102,4 +104,23 @@ svg{
 		color: $color_chroma;
 	}
 
+}
+.resume-item{
+	.item-year{
+		background-color: $color_chroma;
+	}
+}
+.main .portfolio{
+	.types-of-kind-jobs{
+		li{
+			&.active-point-of-kind{
+				color: black;
+				border-bottom: 1px solid $color_chroma;
+			}
+		}
+	}
+	.portfolio-button{
+		border-color: $color_chroma;
+		color: $color_chroma;
+	}
 }

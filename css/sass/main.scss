@@ -3,12 +3,18 @@
 /*--------------------------  START MEDIA REQUEST  --------------------------*/
 $modular-scale-ratio: 1.05; //$golden=1.618 //bourbon
 $modular-scale-base: 1em; //bourbon
-$max-screen-width: (screen0: 2600px,screen1: 1900px, screen2: 1440px, screen3: 1200px, screen4: 992px, screen5: 768px, screen6: 480px, screen7: 320px);
+$max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-3: 1200px, screen-4: 992px, screen-5: 768px, screen-6: 480px, screen-7: 320px);
 // $max-screen-width: (screen0: 1440px, screen1: 1200px, screen2: 992px, screen3: 768px, screen4: 480px, screen5: 320px)
-
+// col-4k  >= 2600px
+// col-fhd >= 1900px
+// col-hd  >= 1440px
+// col-lg  >= 1200px
+// col-md  >= 992px
+// col-sm  >= 768px
+// col-xs  < 768px and >= 480px and 320px
 @for $i from 0 through 7 {
-	@if map_has_key($max-screen-width, screen#{$i}){
-		@media only screen and (max-width :  map_get($max-screen-width, screen#{$i})){
+	@if map_has_key($max-screen-width, screen-#{$i}){
+		@media only screen and (max-width :  map_get($max-screen-width, screen-#{$i})){
 			h1,.h1{
 				font-size: modular-scale(18 - $i); //bourbon function
 			}
@@ -157,7 +163,7 @@ html{
 	min-width: 320px;
 }
 body{
-	font-family: "Raleway", sans-serif;
+	font-family: "RalewayRegular", sans-serif;
 	font-weight: normal;
 	position: relative;
 	line-height: 1.42857;
@@ -186,9 +192,13 @@ a{
 	text-decoration: none;
 	&:hover{
 		color: #06c;
-		text-decoration: underline;
+		text-decoration: none;
 		-o-transition: color .1s ease;
 		transition: color .1s ease;
+	}
+	&:focus{
+		outline: none;
+		text-decoration: none;
 	}
 }
 
@@ -294,7 +304,7 @@ input, a, img{
 			float: left;
 
 		}
-	}
+	}//Логотип
 	.menu{
 		width: 64px;
 		height: 64px;
@@ -355,7 +365,7 @@ input, a, img{
 				transform: rotate(-140deg);
 			}
 		}
-	}
+	}//кнопфка меню
 	.points{
 		position: fixed;
 		width: 100%;
@@ -391,8 +401,8 @@ input, a, img{
 				}	
 			}
 		}
-	}
-	.top_wrapper{
+	}//points of menu witch appear on fullsxreen
+	.top-wrapper-of-main-heder-MyName{
 		display: table;
 		width: 100%;
 		height: 100%;
@@ -433,27 +443,26 @@ input, a, img{
 			opacity: 0.5;
 			@include transition(all 0.2s ease);
 		}
-	}
+	}//Обертка моего имени
 }
 .main{
 	section{
 		padding: 75px 0;
 		min-height: 101vh;
-		h1,h2,h5{
+		.section-main-header, .section-second-header{
 			text-align: center;
 			@extend .Dmitriy;
 		}
-		h5{
+		.section-second-header{
 			letter-spacing: 5px;
 		}
-		hr{
+		.section-heder-beneath-hr{
 			width: 20vmax;
 			height: 1px;
 			background-color: #777;
 			margin-bottom: 30px;
 		}
-		
-	}
+	}//Css for All section
 	.about_me{
 		h5,h3,h4{
 			text-align: center;
@@ -462,7 +471,7 @@ input, a, img{
 		}
 		h5{
 			margin-bottom: 30px;
-			\margin-top: 30px;
+			margin-top: 30px;
 		}
 		h3,h4{
 			text-align: left;
@@ -494,6 +503,142 @@ input, a, img{
 				margin: 10px 3%;
 			}
 		}
+	}//Section with foto and about myself and personal information
+	.resume{
+		.linea-io{
+			font-family: linea-basic-10;
+			font-size: 40px;
+			margin-bottom: 30px
+		}
+		.bl-left{
+			text-align: right;
+			border-right: 0.5px solid;
+			.resume-item .item-description{
+				float: right;
+			}
+		}
+		.bl-right{
+			text-align: left;
+			border-left: 0.5px solid;
+			.resume-item .item-description{
+				float: left;
+			}
+		}
+		.bl-right, .bl-left{
+			padding-top: 30px;
+			height: 100%;			
+			h4{
+				letter-spacing: 1px;
+			}
+			.resume-item{
+				margin: 15px 0;
+				.item-year{
+					display: inline-block;
+					padding: 4px 8px;
+					margin-bottom: 5px;
+					font-style: italic;
+				}
+				.item-organization{
+					strong{
+						font-weight: 600px;
+						font-style: normal;
+						text-transform: uppercase;
+						font-size: 1.1em;
+					}
+
+				}
+				.item-description{
+					text-align: justify;
+					width: 80%;
+				}
+			}
+			@media only screen and (max-width : 768px){
+				border: none;
+				text-align: center;
+				.resume-item .item-description{
+					float: none;
+					margin: 0 auto;
+				}
+			}
+			@media only screen and (max-width : 480){
+				.resume-item .item-description{
+					width: 100%;
+				}
+			}
+		}
+	}//Resume with job and school and university
+	.portfolio{
+		.types-of-kind-jobs, li{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			line-height: 1.1;
+		}
+		li{
+			display: inline-block;
+			margin: 0px 10px 20px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			cursor: pointer;
+		}
+		.portfolio-img{
+			width: 100%;
+		}
+		.content-on-hover{
+			top: 0;
+			left: 0;
+			position: absolute;
+			padding: 10% 0 0 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.7);
+			color: white;
+			text-align: center;
+			opacity: 0;
+			@include my-transition(all, 0.5s, easy, 0);
+		}
+		.portfolio-header{
+			color: #fff;
+			text-transform: uppercase;
+
+		}
+		.portfolio-p{
+
+		}
+		.portfolio-button{
+			text-transform: uppercase;
+			background-color: transparent;
+			border-style: solid;
+    		border-width: 1px;
+			padding: 2px 10px;
+			display: inline-block;
+		}
+	}		
+	.mix{
+		display: none;
+		padding: 0;
+		&:hover .content-on-hover{
+				opacity: 1;
+				padding-top: 17%;
+		}
+	}
+}
+.portfolio-description{
+	background: rgba(255,255,255,1);
+	padding: 20px;
+	.portfolio-description-header{
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	.portfolio-description-p{
+		margin: 5px auto;
+
+	}
+	.portfolio-img{
+		margin: 0 auto;
+		display: block;
+		width: 80%;
 	}
 }
 .footer{

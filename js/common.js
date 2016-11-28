@@ -5,16 +5,29 @@ $(document).ready(function() {
     $(".top_text h1").animated("fadeInDown", "fadeOutUp");
     $(".top_text h4").animated("fadeInUp", "fadeOutDown");
     $(".head").animated("fadeInUp", "fadeOutDown");
+
     $(".appear-side > div:nth-child(1)").animated("flipInY", "flipOutY");
     $(".appear-side").children(2).animated("fadeInLeft", "fadeOutLeft");
     $(".appear-side div:nth-child(3)").animated("fadeInRight", "fadeOutRight");
 
-
+    $(".resume .bl-left .resume-item").animated("fadeInLeft", "fadeOutLeft");
+    $(".resume .bl-right .resume-item").animated("fadeInRight", "fadeOutRight");
 
     $(".heder").css("height", $(window).height());
     $(window).resize(function(event) {
         $(".heder").css("height", $(window).height());
     });
+
+    $(".types-of-kind-jobs li").click(function(event) {
+        $(".types-of-kind-jobs li").removeClass('active-point-of-kind');
+        $(this).addClass('active-point-of-kind');
+    });
+
+    $(".js-popup").magnificPopup({type:'image'});
+    $(".portfolio-button").magnificPopup({ type:'inline' });
+    // Instantiate MixItUp:
+    $('.portfolio-table').mixItUp();
+
 
 	$(window).load(function() { //.onload
 		$(".loader_inner").fadeOut(); 
@@ -42,7 +55,7 @@ $(document).ready(function() {
 		$(".points").fadeToggle(700); // Показать меню
 	});
 
-    $(".js-popup").magnificPopup({type:'image'});
+    
 
 });
 
