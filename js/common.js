@@ -28,6 +28,11 @@ $(document).ready(function() {
     // Instantiate MixItUp:
     $('.portfolio-table').mixItUp();
 
+    $(".mix").each(function(index, el) {
+        $(this).find('.portfolio-button').attr('href', '#portfolio-item-' + index);
+        $(this).find('.portfolio-description').attr('id', 'portfolio-item-' + index);
+    });
+
 
 	$(window).load(function() { //.onload
 		$(".loader_inner").fadeOut(); 

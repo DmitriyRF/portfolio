@@ -161,6 +161,7 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 }
 html{
 	min-width: 320px;
+	overflow-x: hidden;
 }
 body{
 	font-family: "RalewayRegular", sans-serif;
@@ -277,18 +278,18 @@ input, a, img{
 	min-height: 720px;
 	padding: 20px;
 	.for_filter{
-		@media only screen and (max-width:  768px){
-			// backdrop-filter: blur(8px);
-			// -webkit-backdrop-filter: blur(1px);
-			@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
-			width: 100%;
-			height: 125px;
-			display: block;
-			z-index: 100;
-			position: fixed;
-			top: 0;
-			left: 0;
-		}
+		// @media only screen and (max-width:  768px){
+		// 	// backdrop-filter: blur(8px);
+		// 	// -webkit-backdrop-filter: blur(1px);
+		// 	@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
+		// 	width: 100%;
+		// 	height: 125px;
+		// 	display: block;
+		// 	z-index: 100;
+		// 	position: fixed;
+		// 	top: 0;
+		// 	left: 0;
+		// }
 	}
 	.logo{
 		display: block;
@@ -308,11 +309,10 @@ input, a, img{
 	.menu{
 		width: 64px;
 		height: 64px;
-		float: right;
 		z-index: 100;
 		top: 20px;
 		position: fixed;
-		right: 60px;
+		// right: 60px;
 		@include my-border-radius(4px);
 		$w: 36px;
 		$h: 4px;
@@ -560,7 +560,7 @@ input, a, img{
 					margin: 0 auto;
 				}
 			}
-			@media only screen and (max-width : 480){
+			@media only screen and (max-width : 480px){
 				.resume-item .item-description{
 					width: 100%;
 				}
@@ -618,6 +618,11 @@ input, a, img{
 	.mix{
 		display: none;
 		padding: 0;
+		max-height: 194px;
+		overflow: hidden;
+		@media only screen and (min-width : 1440px){
+			max-height: 300px;
+		}
 		&:hover .content-on-hover{
 				opacity: 1;
 				padding-top: 17%;
@@ -646,6 +651,8 @@ input, a, img{
 	@include background-image(linear-gradient(45deg, #fafafa 48%, #454545 45%));//bourbon mixin
 	min-height: 203px;
 	border-bottom: 80px solid #fafafa;
+	top: -3px;
+	margin-top: -3px;
 	.dark{
 		// color: #fafafa;
 		color: #898989;

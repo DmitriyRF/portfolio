@@ -357,9 +357,10 @@
 /* line 162, sass/main.scss */
 html {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
-/* line 165, sass/main.scss */
+/* line 166, sass/main.scss */
 body {
   font-family: "RalewayRegular", sans-serif;
   font-weight: normal;
@@ -370,72 +371,72 @@ body {
   font-size: 14px;
 }
 
-/* line 175, sass/main.scss */
+/* line 176, sass/main.scss */
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: red;
 }
 
-/* line 179, sass/main.scss */
+/* line 180, sass/main.scss */
 body input:required:valid,
 body textarea:required:valid {
   color: green;
 }
 
-/* line 183, sass/main.scss */
+/* line 184, sass/main.scss */
 input {
   margin: 0;
   border: 0;
 }
 
-/* line 187, sass/main.scss */
+/* line 188, sass/main.scss */
 .disable-hover, .disable-hover * {
   pointer-events: none !important;
 }
 
-/* line 190, sass/main.scss */
+/* line 191, sass/main.scss */
 a {
   color: #004d99;
   text-decoration: none;
 }
-/* line 193, sass/main.scss */
+/* line 194, sass/main.scss */
 a:hover {
   color: #06c;
   text-decoration: none;
   -o-transition: color .1s ease;
   transition: color .1s ease;
 }
-/* line 199, sass/main.scss */
+/* line 200, sass/main.scss */
 a:focus {
   outline: none;
   text-decoration: none;
 }
 
-/* line 205, sass/main.scss */
+/* line 206, sass/main.scss */
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 209, sass/main.scss */
+/* line 210, sass/main.scss */
 *:-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 213, sass/main.scss */
+/* line 214, sass/main.scss */
 *::-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 217, sass/main.scss */
+/* line 218, sass/main.scss */
 *:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 223, sass/main.scss */
+/* line 224, sass/main.scss */
 button,
 button:active,
 button:focus,
@@ -449,12 +450,12 @@ input, a, img {
   user-select: none;
 }
 
-/* line 235, sass/main.scss */
+/* line 236, sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 242, sass/main.scss */
+/* line 243, sass/main.scss */
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -467,7 +468,7 @@ input, a, img {
   z-index: 9999;
 }
 
-/* line 253, sass/main.scss */
+/* line 254, sass/main.scss */
 .loader_inner {
   background-image: url("../img/preloader.gif");
   background-repeat: no-repeat;
@@ -483,38 +484,24 @@ input, a, img {
   position: absolute;
 }
 
-/* line 268, sass/main.scss */
+/* line 269, sass/main.scss */
 .heder, .main, .footer, div, section {
   display: block;
   position: relative;
 }
 
-/* line 272, sass/main.scss */
+/* line 273, sass/main.scss */
 .Dmitriy, .heder .top-wrapper-of-main-heder-MyName .top_text h1, .heder .top-wrapper-of-main-heder-MyName .top_text h4, .main section .section-main-header, .main section .section-second-header {
   text-transform: uppercase;
   font-family: RalewayRegular, sans-serif;
 }
 
-/* line 276, sass/main.scss */
+/* line 277, sass/main.scss */
 .heder {
   min-height: 720px;
   padding: 20px;
 }
-@media only screen and (max-width: 768px) {
-  /* line 279, sass/main.scss */
-  .heder .for_filter {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8) 20%, transparent 100%);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 20%, transparent 100%);
-    width: 100%;
-    height: 125px;
-    display: block;
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-}
-/* line 293, sass/main.scss */
+/* line 294, sass/main.scss */
 .heder .logo {
   display: block;
   width: 120px;
@@ -532,20 +519,18 @@ input, a, img {
   border-top-left-radius: 4px;
   z-index: 100;
 }
-/* line 302, sass/main.scss */
+/* line 303, sass/main.scss */
 .heder .logo svg {
   width: 120px;
   float: left;
 }
-/* line 308, sass/main.scss */
+/* line 309, sass/main.scss */
 .heder .menu {
   width: 64px;
   height: 64px;
-  float: right;
   z-index: 100;
   top: 20px;
   position: fixed;
-  right: 60px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -864,7 +849,7 @@ input, a, img {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 480) {
+@media only screen and (max-width: 480px) {
   /* line 564, sass/main.scss */
   .main .resume .bl-right .resume-item .item-description, .main .resume .bl-left .resume-item .item-description {
     width: 100%;
@@ -933,48 +918,58 @@ input, a, img {
 .main .mix {
   display: none;
   padding: 0;
+  max-height: 194px;
+  overflow: hidden;
 }
-/* line 621, sass/main.scss */
+@media only screen and (min-width: 1440px) {
+  /* line 618, sass/main.scss */
+  .main .mix {
+    max-height: 300px;
+  }
+}
+/* line 626, sass/main.scss */
 .main .mix:hover .content-on-hover {
   opacity: 1;
   padding-top: 17%;
 }
 
-/* line 627, sass/main.scss */
+/* line 632, sass/main.scss */
 .portfolio-description {
   background: white;
   padding: 20px;
 }
-/* line 630, sass/main.scss */
+/* line 635, sass/main.scss */
 .portfolio-description .portfolio-description-header {
   text-transform: uppercase;
   font-weight: 800;
 }
-/* line 634, sass/main.scss */
+/* line 639, sass/main.scss */
 .portfolio-description .portfolio-description-p {
   margin: 5px auto;
 }
-/* line 638, sass/main.scss */
+/* line 643, sass/main.scss */
 .portfolio-description .portfolio-img {
   margin: 0 auto;
   display: block;
   width: 80%;
 }
 
-/* line 644, sass/main.scss */
+/* line 649, sass/main.scss */
 .footer {
   background-image: -webkit-linear-gradient(45deg, #fafafa 48%, #454545 45%);
   background-image: linear-gradient(45deg, #fafafa 48%, #454545 45%);
   min-height: 203px;
   border-bottom: 80px solid #fafafa;
+  top: -3px;
+  margin-top: -3px;
 }
-/* line 649, sass/main.scss */
+/* line 656, sass/main.scss */
 .footer .dark {
   color: #898989;
   margin: 20px 0 0;
   position: relative;
 }
-/* line 656, sass/main.scss */
+/* line 663, sass/main.scss */
 .footer .light {
   color: #898989;
   margin: 20px 0 0;
