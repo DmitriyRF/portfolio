@@ -31,7 +31,7 @@
 								 });
 						} else {
 								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-								      $(this).removeClass(outEffect);
+								      $(this).removeClass(outEffect).css("opacity", "0");
 								 });
 						};
 				}, { 
@@ -39,7 +39,7 @@
 				}).waypoint(function(dir) {
 						if (dir === "down") {
 								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-								      $(this).removeClass(outEffect);
+								      $(this).removeClass(outEffect).css("opacity", "0");
 								 });
 						} else {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){

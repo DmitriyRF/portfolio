@@ -119,13 +119,17 @@ svg path {
   background-color: #FF6447;
 }
 
-/* line 116, ../sass/skins/tomato.scss */
+/* line 117, ../sass/skins/tomato.scss */
 .main .portfolio .types-of-kind-jobs li.active-point-of-kind {
   color: black;
   border-bottom: 1px solid #FF6447;
 }
-/* line 122, ../sass/skins/tomato.scss */
+/* line 123, ../sass/skins/tomato.scss */
 .main .portfolio .portfolio-button {
   border-color: #FF6447;
+  color: #FF6447;
+}
+/* line 129, ../sass/skins/tomato.scss */
+.main .contacts .linea-io {
   color: #FF6447;
 }

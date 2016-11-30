@@ -110,17 +110,24 @@ svg{
 		background-color: $color_chroma;
 	}
 }
-.main .portfolio{
-	.types-of-kind-jobs{
-		li{
-			&.active-point-of-kind{
-				color: black;
-				border-bottom: 1px solid $color_chroma;
+.main{
+	.portfolio{
+		.types-of-kind-jobs{
+			li{
+				&.active-point-of-kind{
+					color: black;
+					border-bottom: 1px solid $color_chroma;
+				}
 			}
 		}
+		.portfolio-button{
+			border-color: $color_chroma;
+			color: $color_chroma;
+		}
 	}
-	.portfolio-button{
-		border-color: $color_chroma;
-		color: $color_chroma;
+	.contacts{
+		.linea-io{
+			color: $color_chroma;
+		}
 	}
 }

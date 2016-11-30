@@ -278,18 +278,16 @@ input, a, img{
 	min-height: 720px;
 	padding: 20px;
 	.for_filter{
-		// @media only screen and (max-width:  768px){
-		// 	// backdrop-filter: blur(8px);
-		// 	// -webkit-backdrop-filter: blur(1px);
-		// 	@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
-		// 	width: 100%;
-		// 	height: 125px;
-		// 	display: block;
-		// 	z-index: 100;
-		// 	position: fixed;
-		// 	top: 0;
-		// 	left: 0;
-		// }
+		@media only screen and (max-width:  768px){
+			@include background-image(linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.0) 100%));//bourbon mixin
+			width: 100%;
+			height: 125px;
+			display: block;
+			z-index: 100;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
 	}
 	.logo{
 		display: block;
@@ -312,7 +310,7 @@ input, a, img{
 		z-index: 100;
 		top: 20px;
 		position: fixed;
-		// right: 60px;
+		right: 60px;
 		@include my-border-radius(4px);
 		$w: 36px;
 		$h: 4px;
@@ -618,14 +616,24 @@ input, a, img{
 	.mix{
 		display: none;
 		padding: 0;
-		max-height: 194px;
+		max-height: 190px;
 		overflow: hidden;
 		@media only screen and (min-width : 1440px){
 			max-height: 300px;
 		}
 		&:hover .content-on-hover{
-				opacity: 1;
-				padding-top: 17%;
+			opacity: 1;
+			padding-top: 17%;
+		}
+	}
+	.contacts{
+		.contactbox{
+			text-align: left;
+			margin-bottom: 20px;
+
+		}
+		.linea-io{
+			font-size: 30px;
 		}
 	}
 }
@@ -654,17 +662,26 @@ input, a, img{
 	top: -3px;
 	margin-top: -3px;
 	.dark{
-		// color: #fafafa;
 		color: #898989;
 		margin: 20px 0 0;
 		position: relative;
 
 	}
 	.light{
-		// color: #454545;
 		color: #898989;
 		margin: 20px 0 0;
 		position: relative;
-
+		.social_wrap{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li{
+				display: inline-block;
+				margin: 10px 3%;
+			}
+			.fa{
+				color: #333;
+			}
+		}
 	}
 }
