@@ -60,7 +60,8 @@ $(document).ready(function() {
 		$(".points").fadeToggle(700); // Показать меню
 	});
 
-    
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); 
+
 
 });
 
