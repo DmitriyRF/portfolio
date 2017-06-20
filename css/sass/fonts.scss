@@ -1,6 +1,8 @@
 @import "bourbon/bourbon";
+
 @include font-face("RalewayRegular", "../fonts/RalewayRegular/RalewayRegular", normal, $file-formats: eot woff ttf);
 @include font-face("RalewayBold", "../fonts/RalewayBold/RalewayBold", bold, $file-formats: eot woff ttf);
 @include font-face("RalewayLight", "../fonts/RalewayLight/RalewayLight", 300, $file-formats: eot woff ttf);
 @include font-face("RalewaySemiBold", "../fonts/RalewaySemiBold/RalewaySemiBold", 600, $file-formats: eot woff ttf);
-@include font-face("linea-basic-10", "../fonts/linea-basic-10/linea-basic-10", normal, $file-formats: eot woff ttf);
+@include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold", normal, $file-formats: eot woff ttf);
+@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", normal, $file-formats: eot woff ttf);
